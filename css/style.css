@@ -1,0 +1,273 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#header{
+    background-size: cover;
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(./images/header.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: initial;
+    background-attachment: fixed;
+    min-height: 700px;
+    padding-top: 30px;
+}
+
+.search-bar form input[type=search] {
+    width: 100%;
+    padding: 9px 25px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.header_banner_right{
+    display: flex;
+}
+
+/* Light theme */
+/* #myBody{
+    background-color:black;
+  }
+  #switchButton {
+    background-color: white;
+  }
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+  } */
+  
+  /* Dark Theme*/
+  /* .dark#myBody{
+    background-color:white;
+  }
+  .dark #switchButton {
+    background-color: black;
+  }
+  .dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+  }
+  .dark .card {
+    background-color: black;
+    color: white;
+  }
+   */
+
+.search-bar form span{
+    position: absolute;
+    right: 16px;
+    top: 22px;
+}
+
+.header_banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_banner_logo h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.banner-info{
+    padding-top: 100px;
+    color: white;
+}
+
+.banner-info h3{
+    font-size: 50px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+
+.banner-info button{
+    margin-top: 18px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.banner-info .btn:hover{
+    color: #ff6600 !important;
+}
+
+#about{
+    padding-top: 100px;
+}
+
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about_left h1{
+    font-size: 21px;
+    color: #ff6600;
+    font-family: 'Pacifico', cursive;
+}
+
+.about_left p{
+    font-size: 40px;
+    font-weight: 500;
+    color: #7a7e88;
+}
+
+.about_right{
+    color: #7a7e88;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.book_content{
+    padding-top: 100px;
+    display: flex;
+}
+/* .book_left{
+    background-image: url(./images/banner2.jpg);
+    background-size: cover;
+    width: 50%;
+} */
+.book_left img{
+    width: 103%;
+    height: 100%;
+
+}
+.book_right{
+    width: 50%;
+    background-color: #ff6600;
+    padding-top: 70px;
+    padding-left: 70px;
+}
+
+.book_right h1{
+    color: white;
+    font-size: 18px;
+}
+
+.book_right h2{
+    color: #7a7e88;
+    font-size: 40px;
+}
+
+.book_right p{
+    color: #ffc2b3;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.book_best{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.best_logo{
+    height: 65px;
+    width: 65px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff6600;
+    font-size: 22px;
+}
+
+.best_logo:hover{
+    color: #ffc600;
+}
+
+.deal_des h1{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #7a7e88;
+    font-weight: 700;
+}
+
+.deal_des p{
+    margin-top: 8px;
+    padding-bottom: 25px;
+}
+
+#categories{
+    padding-top: 100px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.categories_title h1{
+    color: #ff6600;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.categories_title{
+    margin-bottom: 50px;
+}
+
+.cate_item{
+    width: 33.33%;
+    padding: 15px 15px;
+    position: relative;
+}
+
+.cate_decs{
+    position: absolute;
+    text-align: left;
+    left: 55px;
+    bottom: 36px;
+}
+
+.cate_decs h1{
+    color: #fdfdfd;
+    font-size: 25px;
+}
+
+.cate_decs h2{
+    color: #dbae00;
+    font-size: 20px;
+}
+
+.cate_item img{
+    border-radius: 10px;
+}
+
+.cate_item:hover img{
+    /* filter: brightness(130%); */
+    filter: contrast(70%);
+    transition: 1s;
+    cursor: pointer;
+}
+/* 
+.demoBar{
+    background-color: #0d1326;
+    display: inline-block;
+    float: right;
+    position: fixed;
+    border-radius: 10px;
+    z-index: 999;
+
+}
+
+.demoBar_item a{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #8f95a8;
+    text-decoration: none;
+}
+
+.demoBar_item i{
+    margin-bottom: 4px;
+    font-size: 20px;
+} */
