@@ -16,3 +16,9 @@ document.getElementById("switchButton").onclick = function () {
     document.getElementById("myBody").classList.toggle("dark");
   };
   
+
+
+
+
+  // Xử lý khi click vào icon mặt trăng
+  
