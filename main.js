@@ -17,7 +17,6 @@ const search_icon_header = document.getElementById("search_icon_header");
 const body = document.getElementById("myBody");
 
 icon_header_moon.addEventListener("click", function () {
-  // Bạn đợi tôi chút tôi nghĩ cách ết cho tối ưu
   icon_sun.classList.toggle("hide_icon_header");
   icon_header_moon.classList.toggle("hide_icon_header");
   search_input_header.classList.add("search__input_dark");
