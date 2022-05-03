@@ -7,18 +7,41 @@ Ngược lại, khi click vào nút sun ☀️, ta sẽ xóa class dark để cs
 
 */
 
-//gọi thẻ button có id là switchButton
-// gắn chức năng click cho switchButton
-document.getElementById("switchButton").onclick = function () {
-    //khi button được click thì tìm đến thẻ body có id là myBody
-    // dùng classlist để gọi thuộc tính class của thẻ body
-    //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
-    document.getElementById("myBody").classList.toggle("dark");
-  };
-  
 
 
+// Xử lý khi click vào icon mặt trăng
+const icon_header_moon = document.getElementById("icon_header_moon");
+const icon_sun = document.getElementById("icon_header_sun");
+const search_input_header = document.getElementById("search_input_header");
+const search_icon_header = document.getElementById("search_icon_header");
+const body = document.getElementById("myBody");
+
+icon_header_moon.addEventListener("click", function () {
+  // Bạn đợi tôi chút tôi nghĩ cách ết cho tối ưu
+  icon_sun.classList.toggle("hide_icon_header");
+  icon_header_moon.classList.toggle("hide_icon_header");
+  search_input_header.classList.add("search__input_dark");
+  search_icon_header.classList.add("search__icon_dark");
+  body.classList.add("body_dark");
+});
+
+icon_sun.addEventListener("click", function () {
+  icon_sun.classList.toggle("hide_icon_header");
+  icon_header_moon.classList.toggle("hide_icon_header");
+  search_input_header.classList.remove("search__input_dark");
+  search_icon_header.classList.remove("search__icon_dark");
+  body.classList.remove("body_dark");
+});
 
 
-  // Xử lý khi click vào icon mặt trăng
-  
+// Count Up
+
+const c1 = new countUp.CountUp("countUp1", 15100);
+c1.start();
+const c2 = new countUp.CountUp("countUp2", 19256);
+c2.start();
+const c3 = new countUp.CountUp("countUp3", 12100);
+c3.start();
+const c4 = new countUp.CountUp("countUp4", 2560);
+c4.start();
+
